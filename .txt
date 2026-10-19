@@ -1,0 +1,162 @@
+//satual=1;// Guarda o slide atual para ser exibido
+//smax=3;// informa o numero maximo de slides
+//stmp=2000;// informa o tempo de troca de slides
+//function troca(){
+    // Comandos para ocultar os slides
+    //document.getElementById("a1").style.visibility="hidden";
+    //document.getElementById("a2").style.visibility="hidden";
+    //document.getElementById("a3").style.visibility="hidden";
+    //document.getElementById("a"+satual).style.visibility="visible";
+    //satual=satual+1;
+    //if
+    //(satual > smax){
+        //satual=1;
+    //}
+//}
+//function slider(){
+//        document.getElementById("a1").style.visibility="hidden";
+//        document.getElementById("a2").style.visibility="hidden";
+//        document.getElementById("a3").style.visibility="visible";
+//        sliderTimer=setInterval(troca,stmp);
+//};
+
+//funçao para a tela andar com o details
+const slides = document.querySelectorAll(".slide");
+const anterior = document.getElementById("anterior");
+const proximo = document.getElementById("proximo");
+
+let Atual = 0;
+
+console.log("Funcionado");
+
+function atualizarSlider() {
+
+    slides.forEach((slide, index) => {
+
+      
+        slide.classList.remove("central", "esquerda", "direita");
+
+     
+        if (index === Atual) {
+            slide.classList.add("central");
+        }
+
+    
+        else if (index === (Atual - 1 + slides.length) % slides.length) {
+            slide.classList.add("esquerda");
+        }
+
+
+        else if (index === (Atual + 1) % slides.length) {
+            slide.classList.add("direita");
+        }
+
+    });
+
+}
+proximo.addEventListener("click", () => {
+
+    Atual++;
+
+    if (Atual >= slides.length) {
+        Atual = 0;
+    }
+
+    atualizarSlider();
+
+});
+anterior.addEventListener("click", () => {
+
+    Atual--;
+
+    if (Atual < 0) {
+        Atual = slides.length - 1;
+    }
+
+    atualizarSlider();
+
+});
+setInterval(() => {
+
+    Atual++;
+
+    if (Atual >= slides.length) {
+        Atual = 0;
+    }
+
+    atualizarSlider();
+
+}, 2000);
+
+
+atualizarSlider();
+
+
+const slides = document.querySelectorAll(".slide");
+const anterior = document.getElementById("anterior");
+const proximo = document.getElementById("proximo");
+
+let Atual = 0;
+
+console.log("Funcionado");
+
+function atualizarSlider() {
+
+    slides.forEach((slide, index) => {
+
+      
+        slide.classList.remove("central", "esquerda", "direita");
+
+     
+        if (index === Atual) {
+            slide.classList.add("central");
+        }
+
+    
+        else if (index === (Atual - 1 + slides.length) % slides.length) {
+            slide.classList.add("esquerda");
+        }
+
+
+        else if (index === (Atual + 1) % slides.length) {
+            slide.classList.add("direita");
+        }
+
+    });
+
+}
+proximo.addEventListener("click", () => {
+
+    Atual++;
+
+    if (Atual >= slides.length) {
+        Atual = 0;
+    }
+
+    atualizarSlider();
+
+});
+anterior.addEventListener("click", () => {
+
+    Atual--;
+
+    if (Atual < 0) {
+        Atual = slides.length - 1;
+    
+    }
+    atualizarSlider();
+});
+setInterval(() => {
+
+    Atual++;
+
+    if (Atual >= slides.length) {
+        Atual = 0;
+    }
+
+    atualizarSlider();
+
+}, 4000);
+
+
+atualizarSlider();
