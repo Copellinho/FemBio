@@ -239,6 +239,9 @@ position: relative;
 }
 }
 .banner{
+  #imgreduz3{
+    display: none;
+  }
 img{
   
     width: 100vw;
