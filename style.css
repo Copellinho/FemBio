@@ -239,9 +239,7 @@ position: relative;
 }
 }
 .banner{
-  #imgreduz3{
-    display: none;
-  }
+
 img{
   
     width: 100vw;
@@ -356,6 +354,9 @@ background-color: transparent;
     border-radius: 10px;
     margin-bottom: 50px;*/
 
+  }
+    #imgreduz3{
+    display: none;
   }
 
 .placeholders{
