@@ -247,6 +247,51 @@ img{
     object-fit: cover;
     
 }
+.textoSlide{
+   width: 60%;
+   position: absolute;
+   top: 30px;
+   left: 10px;
+   padding: 10px 20px;
+     
+   h1{
+     left: 20px;
+     font-size: 10rem;
+     font-weight: 800;
+     text-transform: uppercase;
+     width: 40%;
+     height: 100px;
+       font-family: "Open Sans", sans-serif;
+       margin-bottom: 15px;
+
+
+   }
+   span{
+     background: linear-gradient(60deg,var(--roxo)12%,var(--magenta));
+       background-clip: text;
+       color: transparent;
+       letter-spacing: -2px;
+       font-size: 8.5rem;
+       font-weight: 600;
+       text-transform: uppercase;
+       font-family: "Bebas neue",sans-serif;
+       margin-left: 12px;
+       width: 60%;
+ 
+   }
+   .futuro{
+
+       font-family: 'Great Vibes', cursive;  
+       text-transform: capitalize;
+       font-size: 9rem;
+       margin-left: 45px;
+       transform: rotate(-7deg);
+       position: absolute;
+       top: 270px;
+       
+      
+     }
+ }
 
 .carousel-inner{
     display: table;
@@ -267,51 +312,6 @@ left: 80vw;
 background-color: transparent;
 }
 }
- .textoSlide{
-    width: 60%;
-    position: absolute;
-    top: 30px;
-    left: 10px;
-    padding: 10px 20px;
-      
-    h1{
-      left: 20px;
-      font-size: 10rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      width: 40%;
-      height: 100px;
-        font-family: "Open Sans", sans-serif;
-        margin-bottom: 15px;
-
-
-    }
-    span{
-      background: linear-gradient(60deg,var(--roxo)12%,var(--magenta));
-        background-clip: text;
-        color: transparent;
-        letter-spacing: -2px;
-        font-size: 8.5rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-family: "Bebas neue",sans-serif;
-        margin-left: 12px;
-        width: 60%;
-  
-    }
-    .futuro{
-
-        font-family: 'Great Vibes', cursive;  
-        text-transform: capitalize;
-        font-size: 9rem;
-        margin-left: 45px;
-        transform: rotate(-7deg);
-        position: absolute;
-        top: 270px;
-        
-       
-      }
-  }
   .ElasBanner{
      background-color: var(--lilais-claro-roxo);
     width: 500px;
