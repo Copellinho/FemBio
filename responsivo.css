@@ -238,7 +238,12 @@ header .links ul ul li a{
     height: clamp(15rem, 52vw, 34rem);
     object-fit: cover;
   }
-
+  .banner #imgreduz3{
+    display: table;
+  }
+  .banner #imgfull3{
+    display: none;
+  }
   .banner .textoSlide{
     inset: 0;
     width: 100%;

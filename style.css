@@ -247,6 +247,9 @@ img{
     object-fit: cover;
     
 }
+#imgreduz3{
+  display: none;
+}
 .textoSlide{
    width: 60%;
    position: absolute;
