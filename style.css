@@ -251,7 +251,7 @@ img{
   display: none;
 }
 .textoSlide{
-   width: 60%;
+   width: 60vw;
    position: absolute;
    top: 30px;
    left: 10px;
