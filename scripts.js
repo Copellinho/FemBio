@@ -14,7 +14,7 @@ const dialog3 = document.getElementById("dialog3");
 
 if (BtnDivFemDestaque) {
     BtnDivFemDestaque.onclick = () => {
-        window.location.href = "./pages/Adabio/Adabio.html";
+        window.location.href = "./pages/AdaBio/Adabio.html";
     };
 }
 
@@ -40,7 +40,6 @@ if (BtnFechar3 && dialog3) {
     BtnFechar3.onclick = () => dialog3.close();
 }
 
-// Restauração de scroll na página
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
 }
