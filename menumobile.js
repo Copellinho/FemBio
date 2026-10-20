@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Fecha o menu ao clicar em um link interno
         menuLinks.querySelectorAll("a").forEach((link) => {
             link.addEventListener("click", (evento) => {
-                // Impede o fechamento se for apenas o item pai com submenu ("#")
+   
                 if (link.getAttribute("href") === "#") {
                     evento.preventDefault();
                     return;
