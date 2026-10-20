@@ -285,13 +285,6 @@ header .links ul ul li a{
     text-align: left;
     line-height: 1.35;
   }
-  .banner #imgfull3{
-    display:none ;
-  
-  }
-.banner #imgreduz3{
-  display:block;
-}
   .banner .carousel-inner .carousel-control-prev,
   .banner .carousel-control-prev{
     top: 0; bottom: 0; left: 0; right: auto;
