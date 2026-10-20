@@ -242,8 +242,9 @@ position: relative;
 
 img{
   
-    width: 100vw;
-    height: 70vh;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     
 }
 
@@ -267,7 +268,7 @@ background-color: transparent;
 }
 }
  .textoSlide{
-    width: 50vw;
+    width: 60%;
     position: absolute;
     top: 30px;
     left: 10px;
